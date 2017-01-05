@@ -1,0 +1,709 @@
+>> disp('Zadanie 1')
+Zadanie 1
+>> A = [1, 2, 3; 4, 5, 6; 7, 8, 9]
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> A_1 = [1:3; 4:6; 7:9]
+A_1 =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> A_2_1 = [1, 2; 3, 4]
+A_2_1 =
+
+   1   2
+   3   4
+
+>> A_2_2 = [3; 6]
+A_2_2 =
+
+   3
+   6
+
+>> A_2_3 = [7, 8, 9]
+A_2_3 =
+
+   7   8   9
+
+>> A_2 = [A_2_1, A_2_2; A_2_3]
+A_2 =
+
+   1   2   3
+   3   4   6
+   7   8   9
+
+>> A_3 = [A_2_1, [3;6]; 7:9]
+A_3 =
+
+   1   2   3
+   3   4   6
+   7   8   9
+
+>> disp('Zadanie 2')
+Zadanie 2
+
+>> B=[A+(A+1)*i]
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> disp('Zadanie 3')
+Zadanie 3
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> [A+B]
+ans =
+
+    2 +  2i    4 +  3i    6 +  4i
+    8 +  5i   10 +  6i   12 +  7i
+   14 +  8i   16 +  9i   18 + 10i
+
+>> [A-B]
+ans =
+
+    0 -  2i    0 -  3i    0 -  4i
+    0 -  5i    0 -  6i    0 -  7i
+    0 -  8i    0 -  9i    0 - 10i
+
+>> [A*B]
+ans =
+
+    30 +  36i    36 +  42i    42 +  48i
+    66 +  81i    81 +  96i    96 + 111i
+   102 + 126i   126 + 150i   150 + 174i
+
+>> [A/B]
+warning: matrix singular to machine precision, rcond = 1.71254e-017
+ans =
+
+   0.500000 - 0.416667i   0.166667 - 0.166667i  -0.166667 + 0.083333i
+   0.250000 - 0.166667i   0.166667 - 0.166667i   0.083333 - 0.166667i
+  -0.000000 + 0.083333i   0.166667 - 0.166667i   0.333333 - 0.416667i
+
+>> [A\B]
+warning: matrix singular to machine precision, rcond = 1.54198e-018
+ans =
+
+   0.83333 + 0.33333i   0.33333 - 0.16667i  -0.16667 - 0.66667i
+   0.33333 + 0.33333i   0.33333 + 0.33333i   0.33333 + 0.33333i
+  -0.16667 + 0.33333i   0.33333 + 0.83333i   0.83333 + 1.33333i
+
+>> A'
+ans =
+
+   1   4   7
+   2   5   8
+   3   6   9
+
+>> B'
+ans =
+
+    1 -  2i    4 -  5i    7 -  8i
+    2 -  3i    5 -  6i    8 -  9i
+    3 -  4i    6 -  7i    9 - 10i
+
+>> A^2
+ans =
+
+    30    36    42
+    66    81    96
+   102   126   150
+
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B^2
+ans =
+
+   -21 +  78i   -24 +  93i   -27 + 108i
+   -30 + 159i   -33 + 192i   -36 + 225i
+   -39 + 240i   -42 + 291i   -45 + 342i
+
+>> disp('Zadanie 4')
+Zadanie 4
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> A.*B
+ans =
+
+    1 +  2i    4 +  6i    9 + 12i
+   16 + 20i   25 + 30i   36 + 42i
+   49 + 56i   64 + 72i   81 + 90i
+
+>> A./B
+ans =
+
+   0.20000 - 0.40000i   0.30769 - 0.46154i   0.36000 - 0.48000i
+   0.39024 - 0.48780i   0.40984 - 0.49180i   0.42353 - 0.49412i
+   0.43363 - 0.49558i   0.44138 - 0.49655i   0.44751 - 0.49724i
+
+>> A.\B
+ans =
+
+   1.0000 + 2.0000i   1.0000 + 1.5000i   1.0000 + 1.3333i
+   1.0000 + 1.2500i   1.0000 + 1.2000i   1.0000 + 1.1667i
+   1.0000 + 1.1429i   1.0000 + 1.1250i   1.0000 + 1.1111i
+
+>> A.^2
+ans =
+
+    1    4    9
+   16   25   36
+   49   64   81
+
+>> B.^2
+ans =
+
+    -3 +   4i    -5 +  12i    -7 +  24i
+    -9 +  40i   -11 +  60i   -13 +  84i
+   -15 + 112i   -17 + 144i   -19 + 180i
+
+>> disp('Zadanie 5')
+Zadanie 5
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+
+>> C = [A(:,1).*(-1) A(:,2:end)]
+C =
+
+  -1   2   3
+  -4   5   6
+  -7   8   9
+
+
+>> D = [B(2,:) ; B(3,:).*(-1)]
+D =
+
+    4 +  5i    5 +  6i    6 +  7i
+   -7 -  8i   -8 -  9i   -9 - 10i
+
+>> D = [B(1:2,:) ; B(3,:).*(-1)]
+D =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+   -7 -  8i   -8 -  9i   -9 - 10i
+
+>> disp('Zadanie 6')
+Zadanie 6
+>> C
+C =
+
+  -1   2   3
+  -4   5   6
+  -7   8   9
+
+>> D
+D =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+   -7 -  8i   -8 -  9i   -9 - 10i
+
+>> real(C)
+ans =
+
+  -1   2   3
+  -4   5   6
+  -7   8   9
+
+>> real(D)
+ans =
+
+   1   2   3
+   4   5   6
+  -7  -8  -9
+
+>> imag(C)
+ans =
+
+   0   0   0
+   0   0   0
+   0   0   0
+
+>> imag(D)
+ans =
+
+    2    3    4
+    5    6    7
+   -8   -9  -10
+
+>> abs(C)
+ans =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> abs(D)
+ans =
+
+    2.2361    3.6056    5.0000
+    6.4031    7.8102    9.2195
+   10.6301   12.0416   13.4536
+
+>> angle(C)
+ans =
+
+   3.14159   0.00000   0.00000
+   3.14159   0.00000   0.00000
+   3.14159   0.00000   0.00000
+
+>> angle(D)
+ans =
+
+   1.10715   0.98279   0.92730
+   0.89606   0.87606   0.86217
+  -2.28963  -2.29744  -2.30361
+
+>> disp('Porownaj i skomentuj wyniki')
+Dla liczb niezespolonych abs zwraca wartość bezwzględną, zaś dla liczby zespolonej jest to jej moduł.
+Argument liczby zespolonej dla liczb niezespolonych powienien wynosić 0. Tak też się dzieje dla liczb większych od zera.
+Jeśli liczba jest mniejsza od zera to powinno się do argumentu dodać PI, więc wynik w przybliżeniu to 3.14159.
+>> disp('Zadanie 7')
+Zadanie 7
+>> D
+D =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+   -7 -  8i   -8 -  9i   -9 - 10i
+
+>> D'
+ans =
+
+    1 -  2i    4 -  5i   -7 +  8i
+    2 -  3i    5 -  6i   -8 +  9i
+    3 -  4i    6 -  7i   -9 + 10i
+
+>> D.'
+ans =
+
+    1 +  2i    4 +  5i   -7 -  8i
+    2 +  3i    5 +  6i   -8 -  9i
+    3 +  4i    6 +  7i   -9 - 10i
+
+>> disp("D' tworzy macierz transponowana sprzezona, a D.' tylko transponuje")
+D' tworzy macierz transponowana sprzezona, a D.' tylko transponuje
+>> disp('Zadanie 8')
+Zadanie 8
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> AB = cat(3, A, B)
+AB =
+
+ans(:,:,1) =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+ans(:,:,2) =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> disp('Zadanie 9')
+Zadanie 9
+
+>> E = [1:3; 4:6; 7:9]
+E =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> F = [1:3; 4:6; 7:9]
+F =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> EF = cat(3, E, F)
+EF =
+
+ans(:,:,1) =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+ans(:,:,2) =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> SUB = [EF(1,1:end,1:end)]-[EF(end, 1:end, 1:end)]
+SUB =
+
+ans(:,:,1) =
+
+  -6  -6  -6
+
+ans(:,:,2) =
+
+  -6  -6  -6
+
+>> A
+A =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+>> B
+B =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> AB9b = [AB(1:end, 1, 1), AB(1:end, end, 1), AB(1:end, 1, end), AB(1:end, end, end)]
+AB9b =
+
+    1 +  0i    3 +  0i    1 +  2i    3 +  4i
+    4 +  0i    6 +  0i    4 +  5i    6 +  7i
+    7 +  0i    9 +  0i    7 +  8i    9 + 10i
+
+>> AB9c = AB(end-1:end, end-1:end, end-1:end).*2
+AB9c =
+
+ans(:,:,1) =
+
+   10   12
+   16   18
+
+ans(:,:,2) =
+
+   10 + 12i   12 + 14i
+   16 + 18i   18 + 20i
+
+>> disp('Zadanie 10')
+Zadanie 10
+>> c_AB = {'A', A; 'B', B; 'AB', AB}
+c_AB = 
+{
+  [1,1] = A
+  [2,1] = B
+  [3,1] = AB
+  [1,2] =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  [2,2] =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [3,2] =
+
+  ans(:,:,1) =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  ans(:,:,2) =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+}
+>> cellplot(c_AB)
+warning: the 'cellplot' function is not yet implemented in Octave
+
+Please read <http://www.octave.org/missing.html> to learn how you can
+contribute missing functionality.
+error: 'cellplot' undefined near line 1 column 1
+>> disp('Zadanie 11')
+Zadanie 11
+>> c_AB{4,1} = A+B
+c_AB = 
+{
+  [1,1] = A
+  [2,1] = B
+  [3,1] = AB
+  [4,1] =
+
+      2 +  2i    4 +  3i    6 +  4i
+      8 +  5i   10 +  6i   12 +  7i
+     14 +  8i   16 +  9i   18 + 10i
+
+  [1,2] =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  [2,2] =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [3,2] =
+
+  ans(:,:,1) =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  ans(:,:,2) =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [4,2] = [](0x0)
+}
+>> c_AB{4,1} = 'A+B'
+c_AB = 
+{
+  [1,1] = A
+  [2,1] = B
+  [3,1] = AB
+  [4,1] = A+B
+  [1,2] =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  [2,2] =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [3,2] =
+
+  ans(:,:,1) =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  ans(:,:,2) =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [4,2] = [](0x0)
+}
+>> c_AB{4,2} = A+B
+c_AB = 
+{
+  [1,1] = A
+  [2,1] = B
+  [3,1] = AB
+  [4,1] = A+B
+  [1,2] =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  [2,2] =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [3,2] =
+
+  ans(:,:,1) =
+
+     1   2   3
+     4   5   6
+     7   8   9
+
+  ans(:,:,2) =
+
+      1 +  2i    2 +  3i    3 +  4i
+      4 +  5i    5 +  6i    6 +  7i
+      7 +  8i    8 +  9i    9 + 10i
+
+  [4,2] =
+
+      2 +  2i    4 +  3i    6 +  4i
+      8 +  5i   10 +  6i   12 +  7i
+     14 +  8i   16 +  9i   18 + 10i
+
+}
+>> disp('Zadanie 12')
+Zadanie 12
+>> macierze(1).nazwa = 'A'
+macierze =
+
+  scalar structure containing the fields:
+
+    nazwa = A
+
+>> macierze(1).tablica = A
+macierze =
+
+  scalar structure containing the fields:
+
+    nazwa = A
+    tablica =
+
+       1   2   3
+       4   5   6
+       7   8   9
+
+
+>> macierze(2).nazwa = 'B'
+macierze =
+
+  1x2 struct array containing the fields:
+
+    nazwa
+    tablica
+
+>> macierze(2).tablica = B
+macierze =
+
+  1x2 struct array containing the fields:
+
+    nazwa
+    tablica
+
+>> macierze.nazwa
+ans = A
+ans = B
+>> macierze.tablica
+ans =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+ans =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+>> disp('Zadanie 13')
+Zadanie 13
+>> macierze(3).nazwa = 'A+B'
+macierze =
+
+  1x3 struct array containing the fields:
+
+    nazwa
+    tablica
+
+>> macierze(3).tablica = A+B
+macierze =
+
+  1x3 struct array containing the fields:
+
+    nazwa
+    tablica
+
+>> macierze(3).tablica = macierze(1).tablica + macierze(2).tablica
+macierze =
+
+  1x3 struct array containing the fields:
+
+    nazwa
+    tablica
+
+>> macierze.tablica
+ans =
+
+   1   2   3
+   4   5   6
+   7   8   9
+
+ans =
+
+    1 +  2i    2 +  3i    3 +  4i
+    4 +  5i    5 +  6i    6 +  7i
+    7 +  8i    8 +  9i    9 + 10i
+
+ans =
+
+    2 +  2i    4 +  3i    6 +  4i
+    8 +  5i   10 +  6i   12 +  7i
+   14 +  8i   16 +  9i   18 + 10i
+
+>> disp('Zadanie 14')
+Zadanie 14
+
+>>> sum = macierze(3).tablica(1,1) + c_AB[1,2](1,2)
+                                         ^
+
+>> sum = macierze(3).tablica(1,1) + c_AB{1,2}(1,2)
+sum =  4 + 2i
+>> diary off
