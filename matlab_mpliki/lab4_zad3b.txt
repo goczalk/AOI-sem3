@@ -1,0 +1,51 @@
+>> A
+A =
+
+    2 -  1i    4 -  2i
+    5 + 10i    6 +  5i
+
+>> B
+B =
+
+   0.49874   0.37724   0.13249   0.82147
+   0.21878   0.31925   0.92295   0.64302
+   0.63948   0.45995   0.60905   0.56418
+   0.66931   0.66487   0.40778   0.13242
+
+>> [C,D] = transpozycja_varg(A, B)
+Podales macierz liczb zespolonych. Ktora transpozycje chcesz wykonac?:
+1) Transpozycja niesprzezona
+2) Transpozycja sprzezona
+1
+C =
+
+    2 -  1i    5 + 10i
+    4 -  2i    6 +  5i
+
+D =
+
+   0.49874   0.21878   0.63948   0.66931
+   0.37724   0.31925   0.45995   0.66487
+   0.13249   0.92295   0.60905   0.40778
+   0.82147   0.64302   0.56418   0.13242
+
+>> [C,D] = transpozycja_varg(A, B)
+Podales macierz liczb zespolonych. Ktora transpozycje chcesz wykonac?:
+1) Transpozycja niesprzezona
+2) Transpozycja sprzezona
+2
+C =
+
+    2 +  1i    5 - 10i
+    4 +  2i    6 -  5i
+
+D =
+
+   0.49874   0.21878   0.63948   0.66931
+   0.37724   0.31925   0.45995   0.66487
+   0.13249   0.92295   0.60905   0.40778
+   0.82147   0.64302   0.56418   0.13242
+
+>> 
+>>
+>> diary off

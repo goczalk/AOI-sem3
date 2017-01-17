@@ -1,0 +1,233 @@
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+1
+Dodawanie:
+Podaj liczbe lub macierz: rand(4)
+Podaj liczbe lub macierz: 2
+Operator z m-pliku:
+   2.7247   2.2057   2.7465   2.1750
+   2.5534   2.0663   2.9141   2.8290
+   2.6393   2.9063   2.6036   2.6879
+   2.0264   2.4959   2.9231   2.6559
+Operator wbudowany:
+   2.7247   2.2057   2.7465   2.1750
+   2.5534   2.0663   2.9141   2.8290
+   2.6393   2.9063   2.6036   2.6879
+   2.0264   2.4959   2.9231   2.6559
+Operator z m-pliku jest szybszy: 0.0020008 > 0
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+1
+Dodawanie:
+Podaj liczbe lub macierz: rand(5)
+Podaj liczbe lub macierz: rand(4)
+Operator z m-pliku:
+error: called from
+    dodawanie at line 17 column 5
+    menu at line 20 column 9
+    script at line 1 column 1
+error: Blad. Macierze maja rozne rozmiary.
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+1
+Dodawanie:
+Podaj liczbe lub macierz: rand(5)
+Podaj liczbe lub macierz: rand(5)
+Operator z m-pliku:
+   0.70573   1.11208   0.78278   1.31625   0.40169
+   0.41740   1.66788   1.22724   0.42436   0.92418
+   0.87945   0.70271   0.88820   1.51951   0.46518
+   1.53455   0.94832   1.13306   1.10104   0.92231
+   0.47487   1.51450   0.33886   1.48423   1.17255
+Operator wbudowany:
+   0.70573   1.11208   0.78278   1.31625   0.40169
+   0.41740   1.66788   1.22724   0.42436   0.92418
+   0.87945   0.70271   0.88820   1.51951   0.46518
+   1.53455   0.94832   1.13306   1.10104   0.92231
+   0.47487   1.51450   0.33886   1.48423   1.17255
+Operator z m-pliku jest wolniejszy: 0.0039999 > 0
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+2
+Odejmowanie:
+Podaj liczbe lub macierz: rand(4)
+Podaj liczbe lub macierz: 3
+Operator z m-pliku:
+  -2.0676  -2.0359  -2.3547  -2.0643
+  -2.1269  -2.3730  -2.8688  -2.4790
+  -2.9589  -2.1804  -2.7174  -2.3580
+  -2.0862  -2.0658  -2.9397  -2.3948
+Opertor wbudowany:
+  -2.0676  -2.0359  -2.3547  -2.0643
+  -2.1269  -2.3730  -2.8688  -2.4790
+  -2.9589  -2.1804  -2.7174  -2.3580
+  -2.0862  -2.0658  -2.9397  -2.3948
+Operator z m-pliku jest wolniejszy: 0.0050001 > 0.00099993
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+3
+Mnozenie:
+Podaj liczbe lub macierz: rand(4)
+Podaj liczbe lub macierz: rand(4)
+Operator z m-pliku:
+   0.35071   0.30808   0.98924   0.69900
+   0.39117   0.62541   0.84335   1.00973
+   0.48775   0.77731   0.36454   1.73868
+   0.11721   0.22239   0.17223   0.55545
+Opertor wbudowany:
+   0.35071   0.30808   0.98924   0.69900
+   0.39117   0.62541   0.84335   1.00973
+   0.48775   0.77731   0.36454   1.73868
+   0.11721   0.22239   0.17223   0.55545
+Operator z m-pliku jest wolniejszy: 0.012 > 0
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+4
+Potegowanie:
+Podaj liczbe lub macierz: rand(5)
+Podaj liczbe: 5
+Operator z m-pliku:
+   24.032   45.950   37.379   36.351   47.961
+   16.131   30.858   25.097   24.415   32.204
+   14.985   28.580   23.215   22.560   29.799
+   21.686   41.384   33.631   32.709   43.174
+   24.162   46.034   37.381   36.341   48.000
+Opertor wbudowany:
+   24.032   45.950   37.379   36.351   47.961
+   16.131   30.858   25.097   24.415   32.204
+   14.985   28.580   23.215   22.560   29.799
+   21.686   41.384   33.631   32.709   43.174
+   24.162   46.034   37.381   36.341   48.000
+Operator z m-pliku jest wolniejszy: 0.045002 > 0
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+5
+Potegowanie tablicowe:
+Podaj liczbe lub macierz: rand(4)
+Podaj liczbe: 6
+Operator z m-pliku:
+  1.4955e-004  3.3666e-001  5.6925e-004  1.0034e-003
+  1.5391e-004  2.9901e-005  3.3417e-004  3.1395e-003
+  2.3810e-006  8.4004e-002  1.4733e-004  2.4223e-002
+  1.1063e-005  2.0730e-003  1.9991e-001  6.1327e-002
+Opertor wbudowany:
+  1.4955e-004  3.3666e-001  5.6925e-004  1.0034e-003
+  1.5391e-004  2.9901e-005  3.3417e-004  3.1395e-003
+  2.3810e-006  8.4004e-002  1.4733e-004  2.4223e-002
+  1.1063e-005  2.0730e-003  1.9991e-001  6.1327e-002
+Operator z m-pliku jest wolniejszy: 0.0039999 > 0
+
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+6
+Transpozycja
+Podaj macierz: rand(5)
+Operator z m-pliku:
+   0.3690067   0.9924599   0.2377115   0.4438680   0.9284729
+   0.0887351   0.4539229   0.1840853   0.4982150   0.3427755
+   0.1636922   0.8626260   0.9892259   0.8369293   0.3781937
+   0.3816095   0.4030381   0.2360339   0.6949480   0.5204751
+   0.1556687   0.4594437   0.9983959   0.7124230   0.0011024
+Opertor wbudowany:
+   0.3690067   0.9924599   0.2377115   0.4438680   0.9284729
+   0.0887351   0.4539229   0.1840853   0.4982150   0.3427755
+   0.1636922   0.8626260   0.9892259   0.8369293   0.3781937
+   0.3816095   0.4030381   0.2360339   0.6949480   0.5204751
+   0.1556687   0.4594437   0.9983959   0.7124230   0.0011024
+Operator z m-pliku jest wolniejszy: 0.003 > 0
+>> script
+Wybierz:
+1) Dodawanie
+2) Odejmowanie
+3) Mnozenie
+4) Potegowanie
+5) Potegowanie tablicowe
+6) Transpozycja
+7) Transpozycja sprzezona
+7
+Transpozycja sprzezona
+Podaj macierz: rand(9)
+Operator z m-pliku:
+   0.383497   0.235455   0.617170   0.736823   0.153577   0.027037   0.630895   0.244166   0.284252
+   0.366822   0.807218   0.316279   0.122660   0.151227   0.922019   0.667776   0.404312   0.305729
+   0.568939   0.271827   0.144911   0.100426   0.892989   0.159936   0.048971   0.595677   0.946289
+   0.990229   0.552737   0.200913   0.696878   0.790189   0.496218   0.066937   0.764931   0.103666
+   0.577104   0.481613   0.979368   0.643428   0.679379   0.476839   0.482528   0.950398   0.311120
+   0.606557   0.593961   0.511232   0.332772   0.262987   0.198782   0.626026   0.599280   0.589683
+   0.527015   0.049771   0.419957   0.845729   0.563184   0.338838   0.071620   0.041908   0.554323
+   0.819611   0.454904   0.998239   0.916505   0.989852   0.430325   0.991981   0.010153   0.561465
+   0.353891   0.142940   0.349266   0.380972   0.875578   0.105382   0.365680   0.926394   0.102716
+Opertor wbudowany:
+   0.383497   0.235455   0.617170   0.736823   0.153577   0.027037   0.630895   0.244166   0.284252
+   0.366822   0.807218   0.316279   0.122660   0.151227   0.922019   0.667776   0.404312   0.305729
+   0.568939   0.271827   0.144911   0.100426   0.892989   0.159936   0.048971   0.595677   0.946289
+   0.990229   0.552737   0.200913   0.696878   0.790189   0.496218   0.066937   0.764931   0.103666
+   0.577104   0.481613   0.979368   0.643428   0.679379   0.476839   0.482528   0.950398   0.311120
+   0.606557   0.593961   0.511232   0.332772   0.262987   0.198782   0.626026   0.599280   0.589683
+   0.527015   0.049771   0.419957   0.845729   0.563184   0.338838   0.071620   0.041908   0.554323
+   0.819611   0.454904   0.998239   0.916505   0.989852   0.430325   0.991981   0.010153   0.561465
+   0.353891   0.142940   0.349266   0.380972   0.875578   0.105382   0.365680   0.926394   0.102716
+Operator z m-pliku jest wolniejszy: 0.010001 > 0.0010002
+>> diary off
